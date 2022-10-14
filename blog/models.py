@@ -6,3 +6,6 @@ class Post(models.Model):
     intro = models.TextField()
     body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-date']
